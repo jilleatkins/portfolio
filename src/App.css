@@ -17,7 +17,7 @@
 
 .nav-left {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 5vh; 
   z-index: 1;
   height: 100vh;
@@ -72,7 +72,8 @@
 
 .copyright {
   color: #443235;
-  position: absolute;
+  position: fixed;
+  bottom: 2;
   list-style-type: none;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 9px;
@@ -279,10 +280,8 @@
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   margin-top: 15vh;
-  padding-bottom: 5vh;
   margin-left: 10vw;
   position: absolute;
-  z-index: 3;
   animation: fade-intro-up 2s ease;
   -webkit-animation: fade-intro-up 1.2s ease;
 }
@@ -308,10 +307,10 @@
 }
 
 .para-overline {
-  width: 28vw;
+  width: 45vw;
   border-top: solid;
   position: absolute;
-  margin-top: 36vh;
+  margin-top: 49vh;
   margin-left: 11vw;
   border-width: 0px;
   animation: border-animate 1s ease-in-out forwards;
@@ -325,7 +324,7 @@
   }
 
   to {
-    width: 28vw;
+    width: 50vw;
     border-width: 1px;
   }
 }
@@ -338,7 +337,7 @@
   display: flex;
   position: absolute;
   flex-direction: column;
-  margin-top: 30vh;
+  margin-top: 40vh;
   margin-left: 13vw;
   width: 630px;
   z-index: 1;
@@ -352,12 +351,27 @@
   margin-bottom: 20px;
 }
 
+.skills-subheading {
+  font-family: 'grandslangroman', sans-serif;
+  font-weight: 200;
+  font-size: 46px;
+  margin: 0vh;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  border-top: solid 1px;
+}
+
 .about-sub-subheading {
-  margin: 1vh;
+  margin: 0vh;
 }
 
 .about-sentence {
   margin: 10px;
+  line-height: 2rem;
+}
+
+.skills-list {
+  line-height: 2rem;
 }
 
 .animated-underline {
@@ -396,6 +410,25 @@
 
 .bolder {
   font-weight: 400;
+}
+
+.to-top {
+  text-decoration: none;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  color: #443235;
+  padding-top: 1vh;
+  margin-bottom: 5vh;
+}
+
+.to-top:hover {
+  text-decoration: underline;
+  /* font-weight: 500; */
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  color: #443235;
+  margin-left: 3vw;
+  margin-bottom: 5vh;
 }
 
 /* CONTACT =========================================== */
