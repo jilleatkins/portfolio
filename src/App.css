@@ -419,15 +419,15 @@
   color: #443235;
   padding-top: 1vh;
   margin-bottom: 5vh;
+  width: 6vw;
 }
 
 .to-top:hover {
   text-decoration: underline;
-  /* font-weight: 500; */
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 12px;
   color: #443235;
-  margin-left: 3vw;
+  padding-top: 1vh;
   margin-bottom: 5vh;
 }
 

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import '../App.css';
+import githubIcon from 'src/icons8/icons8-github-60.svg';
 
 function App() {
   return (
     <div>
       <container>
+        <img src="src/icons8/icons8-github-60.svg" alt="github"/>
         <nav>
           <ul class="nav-left">
             <li class="nav-item">
