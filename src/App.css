@@ -15,6 +15,39 @@
 
 /* HOME ======================================================================================== */
 
+
+.github-icon {
+  margin-top: 3vh;
+  margin-left: 87vw;
+  display: inline-block;
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 2vh;
+  /* padding-top: 5vh; */
+}
+
+.github-icon:hover {
+  background-color: #ffffff3f;
+  border-radius: 30px;
+}
+
+.linkedin-icon {
+  margin-top: 3vh;
+  margin-right: 0vw;
+  display: inline-block;
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 2vh;
+  /* padding-top: 5vh; */
+}
+
+.linkedin-icon:hover {
+  background-color: #ffffff3f;
+  border-radius: 30px;
+}
+
 .nav-left {
   display: flex;
   position: fixed;

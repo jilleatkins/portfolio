@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as GitHubIcon } from '../icons8/icons8-github-30.svg';
+import { ReactComponent as LinkedInIcon } from '../icons8/icons8-linkedin-2-30.svg';
 import '../App.css';
-import githubIcon from 'src/icons8/icons8-github-60.svg';
+// import githubIcon from '../icons8/icons8-github-60.svg';
 
 function App() {
   return (
     <div>
       <container>
-        <img src="src/icons8/icons8-github-60.svg" alt="github"/>
+        <a href="https://github.com/jilleatkins"><GitHubIcon className="github-icon"/></a>
+        <a href="https://linkedin.com/in/jill-atkins"><LinkedInIcon className="linkedin-icon"/></a>
         <nav>
           <ul class="nav-left">
             <li class="nav-item">
