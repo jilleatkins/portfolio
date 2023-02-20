@@ -6,6 +6,8 @@
 
 .html {
   height: 100%;
+  width: 100%;
+  aspect-ratio: 10, 3;
 }
 
 /* HOME ======================================================================================== */
@@ -352,13 +354,12 @@
 
 .about {
   color: #2d2123;
-  font-size: 297px;
+  font-size: 18rem;
   font-family: 'grandslangroman', sans-serif;
   font-weight: 300;
   display: block;
-  line-height: 297px;
-  width: 899px;
-  flex-direction: grid;
+  line-height: 18rem;
+  width: 4rem;
   text-align: start;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -392,10 +393,11 @@
 }
 
 .about-para-overline {
+  color: #443235;
   width: 35%;
   border-top: solid;
   position: absolute;
-  margin-top: 19%;
+  margin-top: 18%;
   margin-left: 11vw;
   border-width: 0px;
   animation: border-animate 1s ease-in-out forwards;
@@ -464,7 +466,7 @@
   line-height: 2rem;
 }
 
-.animated-underline {
+/* .animated-underline {
   display: inline-block;
 }
 
@@ -496,10 +498,10 @@
 
 .animated-vertical-underline:hover:after {
   width: 100%;
-}
+} */
 
 .bolder {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .to-top:link {
@@ -816,7 +818,7 @@
   color: #eee7e1ce;
   border-top: solid;
   position: absolute;
-  margin-top: -6.5%;
+  margin-top: -6.8%;
   margin-left: 38vw;
   border-width: 0px;
   animation: projects-border-animate 1s ease-in-out forwards;
