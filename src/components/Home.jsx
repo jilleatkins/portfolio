@@ -7,8 +7,10 @@ function App() {
   return (
     <div>
       <container>
-        <a href="https://github.com/jilleatkins"><GitHubIcon className="home-github-icon"/></a>
-        <a href="https://linkedin.com/in/jill-atkins"><LinkedInIcon className="home-linkedin-icon"/></a>
+        <container class="icons-box">
+          <a href="https://github.com/jilleatkins"><GitHubIcon className="home-github-icon" /></a>
+          <a href="https://linkedin.com/in/jill-atkins"><LinkedInIcon className="home-linkedin-icon" /></a>
+        </container>
         <div class="section-left">
           <h1 class="atkins">JILL</h1><h1 class="atkins">ATKINS</h1>
         </div>
@@ -16,7 +18,7 @@ function App() {
           <p>Junior software developer with a passion for <span class="front-end-design">front-end design</span> and <span class="clean-lines">clean lines</span>.</p>
         </div>
       </container>
-    </div>   
+    </div>
   );
 }
 

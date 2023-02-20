@@ -36,7 +36,7 @@ const NavBar = () => {
           default:
             textColor = '#443235';
             lineColor = '#443235';
-            copyrightColor = '#EEE7E1';
+            copyrightColor = '#443235';
             break;
         }
       
