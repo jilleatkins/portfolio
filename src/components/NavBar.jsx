@@ -11,36 +11,43 @@ const NavBar = () => {
     const location = useLocation();
 
     useEffect(() => {
-        let textColor, lineColor;
+        let textColor, lineColor, copyrightColor;
         switch (location.pathname) {
           case '/':
             textColor = '#443235';
-            lineColor = '#443235'; // black
+            lineColor = '#443235';
+            copyrightColor = '#443235';
             break;
           case '/about':
             textColor = '#443235';
-            lineColor = '#443235'; // light gray
+            lineColor = '#443235';
+            copyrightColor = '#443235';
             break;
           case '/contact':
             textColor = '#EEE7E1';
-            lineColor = '#EEE7E1'; // light gray
+            lineColor = '#EEE7E1';
+            copyrightColor = '#EEE7E1';
             break;
           case '/projects':
             textColor = '#EEE7E1';
-            lineColor = '#EEE7E1'; // light gray
+            lineColor = '#EEE7E1';
+            copyrightColor = '#EEE7E1';
             break;
           default:
             textColor = '#443235';
-            lineColor = '#443235'; // light gray
+            lineColor = '#443235';
+            copyrightColor = '#EEE7E1';
             break;
         }
       
         const navItemTextElements = document.querySelectorAll(`.${navItemText}`);
         const navLineElement = document.querySelector(`.${navLine}`);
+        const copyrightElement = document.querySelector(`.${copyright}`);
         navItemTextElements.forEach((element) => {
           element.style.color = textColor;
         });
         navLineElement.style.backgroundColor = lineColor;
+        copyrightElement.style.color = copyrightColor;
       }, [location]);
       
 
