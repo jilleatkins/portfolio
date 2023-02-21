@@ -509,35 +509,46 @@
 
 .to-top:link {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
   text-decoration: none;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 12px;
   color: #443235;
   padding: 5%;
-  width: fit-content;
+  width: 50%;
+  line-height: 200%;
+
 }
 
 .to-top:hover {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
+  line-height: 200%;
   text-decoration: underline;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 12px;
   color: #443235;
   padding: 5%;
-  width: fit-content;
+  width: 50%;
+  line-height: 200%;
 }
 
 .to-top:visited {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
   text-decoration: underline;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 12px;
   color: #443235;
   padding: 5%;
-  width: fit-content;
+  width: 50%;
+  line-height: 200%;
 }
 
 /* CONTACT =========================================== */
