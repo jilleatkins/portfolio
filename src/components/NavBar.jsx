@@ -33,6 +33,16 @@ const NavBar = () => {
             lineColor = '#EEE7E1';
             copyrightColor = '#EEE7E1';
             break;
+            case '/goldenbasket':
+            textColor = '#EEE7E1';
+            lineColor = '#EEE7E1';
+            copyrightColor = '#EEE7E1';
+            break;
+            case '/powerpongleague':
+            textColor = '#EEE7E1';
+            lineColor = '#EEE7E1';
+            copyrightColor = '#EEE7E1';
+            break;
           default:
             textColor = '#443235';
             lineColor = '#443235';
