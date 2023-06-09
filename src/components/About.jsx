@@ -11,7 +11,6 @@ const About = () => {
         <div>
           <h1 class="about">About</h1>
         </div>
-        {/* <img class="profile-photo" src={require("./profile-photo.jpg")} alt="profile" /> */}
         <div class="about-para-overline"></div>
         <div class="about-para">
           <h2 class="about-subheading">I'm a junior software developer. And I <span class="animated-underline">love it</span>.</h2>
@@ -79,8 +78,6 @@ const About = () => {
         </div>
       </container>
     </div>
-
-    // 
   );
 };
 

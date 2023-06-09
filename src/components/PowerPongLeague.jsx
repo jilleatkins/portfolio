@@ -19,7 +19,9 @@ const PowerPongLeague = () => {
                     />
                 </div>
             </div>
-            <a class="to-projects" href="/projects">BACK TO PROJECTS</a>
+            <div>
+                <a class="to-projects" href="/projects">BACK TO PROJECTS</a>
+            </div>
         </div>
     )
 }

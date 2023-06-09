@@ -7,9 +7,6 @@ const Projects = () => {
       <container>
         <div class="projects-top-border-line"></div>
       </container>
-      <container >
-        
-      </container>
       <container class="row">
         <div class="column">
         <h1 class="projects">PROJECTS</h1>

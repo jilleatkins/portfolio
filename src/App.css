@@ -12,6 +12,33 @@
 }
 }
 
+/* TRANSITIONS ======================================================================================== */
+
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+}
+
 /* HOME ======================================================================================== */
 
 .icons-box {
@@ -67,7 +94,6 @@
 }
 
 .nav-item-text {
-  /* display: inline-flex; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #443235;
@@ -154,8 +180,9 @@
 .nav-line {
   list-style-type: none;
   width: 1px;
-  height: 8%;
-  margin-left: 15%;
+  height: 14vh;
+  margin-top: -4vh;
+  margin-left: 0.7vw;
   background-color: #443235be;
 }
 
@@ -163,7 +190,7 @@
   color: #443235;
   width: 6rem;
   padding-top: 15%;
-  padding-left: 160%;
+  padding-left: 155%;
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
   letter-spacing: 3px;
@@ -325,8 +352,8 @@
   position: absolute;
   top: 50px;
   right: 50px;
-  border-top: 1px solid #443235;
-  border-right: 1px solid #443235;
+  border-top: 1px solid #443235be;
+  border-right: 1px solid #443235be;
   width: 0%;
   height: 0%;
   animation: line 1s linear forwards;
@@ -357,11 +384,10 @@
 
 .about {
   color: #2d2123;
-  font-size: 18rem;
+  font-size: 15vw;
   font-family: 'grandslangroman', sans-serif;
   font-weight: 300;
   display: block;
-  line-height: 18rem;
   width: 4rem;
   text-align: start;
   margin-block-end: 0px;
@@ -396,15 +422,13 @@
 }
 
 .about-para-overline {
-  color: #443235;
+  color: #443235be;
   width: 35%;
   border-top: solid;
   position: absolute;
-  margin-top: 18%;
-  margin-left: 11vw;
-  border-width: 0px;
+  margin-top: 23vw;
+  margin-left: 22vw;
   animation: border-animate 1s ease-in-out forwards;
-  z-index: 10;
 }
 
 @keyframes border-animate {
@@ -427,16 +451,15 @@
   display: flex;
   position: absolute;
   flex-direction: column;
-  margin-top: 17%;
+  margin-top: 33vh;
   margin-left: 13vw;
-  width: 630px;
-  z-index: 1;
+  width: 45vw;
 }
 
 .about-subheading {
   font-family: 'grandslangroman', sans-serif;
   font-weight: 200;
-  font-size: 46px;
+  font-size: 3vw;
   margin-top: 110px;
   margin-bottom: 20px;
 }
@@ -477,15 +500,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
   text-decoration: none;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 12px;
   color: #443235;
-  padding: 5%;
+  padding: 3%;
   width: 50%;
   line-height: 200%;
-
+  letter-spacing: 1px;
 }
 
 .to-top:hover {
@@ -498,7 +520,7 @@
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 12px;
   color: #443235;
-  padding: 5%;
+  padding: 3%;
   width: 50%;
   line-height: 200%;
 }
@@ -521,11 +543,10 @@
 
 .contact {
   color: #e6ddde;
-  font-size: 150px;
+  font-size: 9vw;
   font-family: 'grandslangroman', sans-serif;
   font-weight: 300;
   display: flex;
-  line-height: 297px;
   width: fit-content;
   padding-top: 10%;
   padding-left: 5%;
@@ -588,11 +609,11 @@
 
 .contact-para-overline {
   color: #e6ddde;
-  width: 8%;
+  width: 9vw;
   border-top: solid;
   position: relative;
-  margin-top: -4%;
-  margin-left: 16%;
+  margin-top: -4.5vh;
+  margin-left: 17vw;
   border-width: 0px;
   animation: contact-border-animate 1s ease-in-out forwards;
   z-index: 10;
@@ -605,7 +626,7 @@
   }
 
   to {
-    width: 8%;
+    width: 9vw;
     border-width: 1px;
   }
 }
@@ -615,7 +636,8 @@
   position: relative;
   font-family: 'grandslangroman', sans-serif;
   font-weight: 200;
-  font-size: 46px;
+  font-size: 3vw;
+  margin: 3%;
   animation: fade-subheading-up 2s ease;
   -webkit-animation: fade-subheading-up 2s ease;
 }
@@ -650,13 +672,13 @@
 }
 
 .contact-para {
+  display: flex;
+  flex-direction: column;
   color: #e6ddde;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 18px;
   font-weight: 200;
-  display: flex;
-  flex-direction: column;
-  margin-left: 40%;
+  margin-left: 32vw;
   width: 40%;
   animation: fade-subheading-up 2s ease;
   -webkit-animation: fade-subheading-up 2s ease;
@@ -691,12 +713,24 @@
   }
 }
 
+.email-me {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 3%;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+  width: 20%;
+  margin-left: 11vw;
+}
 
 .contact-github-icon {
-  display: flex;
-  padding: 40%;
-  margin-left: 50%;
   color: #e6ddde;
+  padding: 10%;
+  margin-right: 25%;
 }
 
 .contact-github-icon:hover {
@@ -706,10 +740,9 @@
 }
 
 .contact-linkedin-icon {
-  display: flex;
-  padding: 40%;
-  margin-left: 50%;
   color: #e6ddde;
+  padding: 10%;
+  margin-left: 25%;
 }
 
 .contact-linkedin-icon:hover {
@@ -718,18 +751,7 @@
   border-radius: 50%;
 }
 
-.contact-icons {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1%;
-  width: 20%;
-  margin-left: 5%;
-}
 
-.email-me {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
 
 /* PROJECTS ================================= */
 
@@ -737,7 +759,7 @@
   display: flex;
   position: relative;
   color: #EEE7E1;
-  font-size: 140px;
+  font-size: 8vw;
   font-family: 'grandslangroman', sans-serif;
   font-weight: 300;
   line-height: 100px;
@@ -818,7 +840,7 @@
 .projects-subheading {
   font-family: 'grandslangroman', sans-serif;
   font-weight: 200;
-  font-size: 46px;
+  font-size: 2.5vw;
   color: #EEE7E1;
   margin-top: 8%;
   margin-bottom: 20px;
@@ -856,8 +878,7 @@
   text-decoration: none;
   width: 100vw;
   margin: 0%;
-  padding-top: 5%;
-  /* padding-left: 10%; */
+  padding-top: 10%;
   line-height: 200%;
 }
 
@@ -870,8 +891,7 @@
   text-decoration: none;
   width: 100vw;
   margin: 0%;
-  padding-top: 5%;
-  /* padding-left: 10%; */
+  padding-top: 10%;
   line-height: 200%;
   text-decoration: underline;
 }
@@ -891,7 +911,6 @@
   width: 100vw;
   margin: 0%;
   padding-top: 5%;
-  /* padding-left: 10%; */
   line-height: 200%;
   text-decoration: none;
 }
@@ -900,7 +919,7 @@
   color: #eee7e1ab;
   font-family: 'grandslangroman', serif;
   font-weight: 100;
-  font-size: 70px;
+  font-size: 4vw;
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -911,7 +930,8 @@
   font-style: italic;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 18 px;
+  font-size: 1.5vw;
+  margin: 0%;
 }
 
 .project-landing-subheader {
@@ -919,12 +939,12 @@
   font-family: 'Montserrat', serif;
   font-weight: 600;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 .row {
   display: flex;
-  padding-top: 20%;
+  padding-top: 20vh;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -934,6 +954,11 @@
   margin: 4%;
 }
 
+.sub-column {
+  flex: 50%;
+  margin: 0%;
+}
+
 .sub-row {
   display: flex;
   justify-content: space-evenly;
@@ -941,15 +966,10 @@
   width: 50%;
 }
 
-.sub-column {
-  flex: 50%;
-  margin: 0%;
-}
-
 .golden-basket:link {
   display: flex;
   font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
+  font-size: 3vw;
   color:#e5bb50;
   text-shadow: 3px 3px #b98c1b;
   text-decoration: none;
@@ -960,7 +980,7 @@
 .golden-basket:hover {
   display: flex;
   font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
+  font-size: 3vw;
   color:#e5bb50;
   text-shadow: 3px 3px #b98c1b;
   text-decoration: none;
@@ -970,7 +990,7 @@
 .golden-basket:visited {
   display: flex;
   font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
+  font-size: 3vw;
   color:#e5bb50;
   text-shadow: 3px 3px #b98c1b;
   text-decoration: none;
@@ -981,7 +1001,7 @@
   display: flex;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 3px;
-  font-size: 60px;
+  font-size: 2.5vw;
   text-decoration: none;
   color: rgb(230, 226, 236); 
   text-shadow:
@@ -1000,7 +1020,7 @@
   display: flex;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 3px;
-  font-size: 60px;
+  font-size: 2.5vw;
   text-decoration: none;
   color: rgb(230, 226, 236); 
   text-shadow:
@@ -1019,7 +1039,7 @@
   display: flex;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 3px;
-  font-size: 60px;
+  font-size: 2.5vw;
   text-decoration: none;
   color: rgb(230, 226, 236); 
   text-shadow:
@@ -1036,7 +1056,7 @@
 
 .btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-family: 'Montserrat', serif;
   font-size: 15px;
   line-height: 120%;
@@ -1046,12 +1066,14 @@
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
-  padding: 2%;
+  padding: 5%;
+  margin: 5%;
+  transition: 0.2s;
 }
 
 .btn:hover {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-family: 'Montserrat', serif;
   font-size: 15px;
   line-height: 120%;
@@ -1061,17 +1083,18 @@
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
-  padding: 2%;
-  background-color: rgba(108, 108, 108, 0.499);
+  padding: 5%;
+  margin: 5%;
+  background-color: rgba(108, 108, 108, 0.321);
 }
 
 .project-info {
   color: #eee7e1ab;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1vw;
   line-height: 200%;
-  padding-bottom: 1%;
+  margin: 0%;
 }
 
 .video-container {
